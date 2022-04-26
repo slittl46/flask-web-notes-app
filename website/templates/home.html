@@ -3,9 +3,9 @@
 <h1 align="center">Notes</h1>
 <ul class="list-group list-group-flush" id="notes">
   {% for note in user.notes %}
-  <li class="list-group-item">
+  <li class="list-group-item" style="background-image: url(../static/background.jpg); no-repeat auto; color:white;">
     {{ note.data }}
-    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+    <button type="button" class="close" style= "color: white;" onClick="deleteNote({{ note.id }})">
       <span aria-hidden="true">&times;</span>
     </button>
   </li>
